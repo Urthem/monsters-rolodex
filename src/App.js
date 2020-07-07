@@ -11,8 +11,6 @@ class App extends Component {
       monsters: [],
       searchField: "",
     };
-
-    // this.handleChange = this.handleChange.bind(this); // use ES6 arrow function!
   }
 
   componentDidMount() {
@@ -31,10 +29,8 @@ class App extends Component {
     const filteredMonsters = monsters.filter((monster) =>
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     );
-    // console.log(filteredMonsters);
 
     return (
-      //jsx inside ()
       <div className="App">
         <h1>Meow-Dex / Your Meowjesty</h1>
         <SearchBox
